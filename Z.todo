@@ -1,0 +1,32 @@
+------------------------
+TODOS
+------------------------
+☐ 
+
+------------------------
+REFERENCE
+------------------------
+☐ npm install -g gatsby-cli
+☐ Need Python!
+☐ Had to install imagemin-pnquant and pngquant-bin
+☐ http://localhost:8000/___graphql? (to check for connection)
+☐ https://blog.billpliske.com/wp-json/wp/v2/posts
+☐ https://blog.billpliske.com/wp-json/wp/v2/pages
+☐ https://github.com/GatsbyCentral/gatsby-starter-wordpress
+☐ hook: https://adam-mould.co.uk/building-deploying-gatsby-wordpress-api-netlify/
+☐ vscode-styled-sort
+☐ https://www.react-spring.io/docs/props/keyframes
+
+
+------------------------
+OTHER STUFF
+------------------------
+
+About srcSet
+☐ https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/
+
+To look at later
+☐ https://booyaa.wtf/2019/gatsby-wordpress-cutlasses-and-webhooks/
+☐ https://www.pinterest.com/pin/386676318003146799/
+☐ https://www.pinterest.com/search/pins/?q=large%20typography%20headline%20blog%20design&rs=typed&term_meta[]=large%7Ctyped&term_meta[]=typography%7Ctyped&term_meta[]=headline%7Ctyped&term_meta[]=blog%7Ctyped&term_meta[]=design%7Ctyped
+☐ https://mkdevdiary.netlify.com/extremely-fast-load-time-with-gatsby-and-self-hosted-fonts/
