@@ -30,3 +30,27 @@ To look at later
 ☐ https://www.pinterest.com/pin/386676318003146799/
 ☐ https://www.pinterest.com/search/pins/?q=large%20typography%20headline%20blog%20design&rs=typed&term_meta[]=large%7Ctyped&term_meta[]=typography%7Ctyped&term_meta[]=headline%7Ctyped&term_meta[]=blog%7Ctyped&term_meta[]=design%7Ctyped
 ☐ https://mkdevdiary.netlify.com/extremely-fast-load-time-with-gatsby-and-self-hosted-fonts/
+
+------------------------
+BLOG NOTES
+------------------------
+☐ Saving spearate files inside a pages folder makes them automatically recognizes by Gatsby. You link between pages using the <Link to="/pagename"> tag.
+☐ GraphQL queries:
+    1. Check out GraphiQL Docs
+    2. Go to a component
+    3. After computer/fucntion is declare, but before return statement, do a const data = useStaticQery(graphql`
+        query {
+            site {
+                siteMetaData {
+                    title 
+                }
+            }
+        }
+    `)
+☐ Use GraphQLPLayground
+    1. Use playground by creating a .env.development file at root, and inside that file write GATSBY_GRAPHQL_IDE=playground
+    2. Load it with npm i -D env-cmd
+    3. Change package.json scripts area.
+        "develop": "env-cmd .env.development gatsby develop"
+
+☐ 

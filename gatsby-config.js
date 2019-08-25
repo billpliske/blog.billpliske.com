@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Bill's blog name`,
+    subtitle: 'Blog subtitle for Bill',
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -30,18 +31,12 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        // your wordpress source
         baseUrl: `blog.billpliske.com`,
         protocol: `https`,
-        // is it hosted on wordpress.com, or self-hosted?
         hostingWPCOM: false,
-        // does your site use the Advanced Custom Fields Plugin?
         useACF: false,
         excludedRoutes: ["/wp/v2/users/me", "/wp/v2/themes", "/acf/v2/options", "/wp/v2/settings"]
       }
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
+    },
+  ]
 }

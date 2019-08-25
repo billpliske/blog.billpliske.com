@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.1.4",
     "gatsby-plugin-sharp": "^2.2.13",
     "gatsby-source-filesystem": "^2.1.11",
-    "gatsby-source-wordpress": "^3.1.23",
+    "gatsby-source-wordpress": "^3.1.25",
     "gatsby-transformer-sharp": "^2.2.7",
     "imagemin-pngquant": "^8.0.0",
     "pngquant-bin": "^5.0.2",
