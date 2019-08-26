@@ -28,15 +28,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        baseUrl: `blog.billpliske.com`,
-        protocol: `https`,
-        hostingWPCOM: false,
-        useACF: false,
-        excludedRoutes: ["/wp/v2/users/me", "/wp/v2/themes", "/acf/v2/options", "/wp/v2/settings"]
-      }
-    },
   ]
 }
