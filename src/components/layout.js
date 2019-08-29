@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-
-import { rhythm, scale } from "../utils/typography";
+import { GlobalStyle } from "../DefaultStyles";
 
 class Layout extends React.Component {
     render() {
@@ -12,13 +11,7 @@ class Layout extends React.Component {
 
         if (location.pathname === rootPath) {
             header = (
-                <h1
-                    style={{
-                        ...scale(1.5),
-                        marginBottom: rhythm(1.5),
-                        marginTop: 0,
-                    }}
-                >
+                <Title home>
                     <Link
                         style={{
                             boxShadow: `none`,
@@ -29,16 +22,11 @@ class Layout extends React.Component {
                     >
                         {title}
                     </Link>
-                </h1>
+                </Title>
             );
         } else {
             header = (
-                <h3
-                    style={{
-                        fontFamily: `Montserrat, sans-serif`,
-                        marginTop: 0,
-                    }}
-                >
+                <Title>
                     <Link
                         style={{
                             boxShadow: `none`,
@@ -49,26 +37,22 @@ class Layout extends React.Component {
                     >
                         {title}
                     </Link>
-                </h3>
+                </Title>
             );
         }
         return (
-            <Wrapper
-                style={{
-                    marginLeft: `auto`,
-                    marginRight: `auto`,
-                    maxWidth: rhythm(24),
-                    padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-                }}
-            >
-                <header>{header}</header>
-                <main>{children}</main>
-                <footer>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </footer>
-            </Wrapper>
+            <>
+                <GlobalStyle />
+                <Wrapper>
+                    <header>{header}</header>
+                    <main>{children}</main>
+                    <footer>
+                        © {new Date().getFullYear()}, Built with
+                        {` `}
+                        <a href="https://www.gatsbyjs.org">Gatsby</a>
+                    </footer>
+                </Wrapper>
+            </>
         );
     }
 }
@@ -80,4 +64,8 @@ const Wrapper = styled.div`
         font-weight: normal;
         margin-top: -20px;
     }
+`;
+
+const Title = styled.h2`
+    font-size: ${props => (props.home ? "50px" : "20px")};
 `;
