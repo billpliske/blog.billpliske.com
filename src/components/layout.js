@@ -2,42 +2,32 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { GlobalStyle } from "../DefaultStyles";
+import { Title } from "../DefaultStyles";
 
 class Layout extends React.Component {
     render() {
-        const { location, title, children } = this.props;
+        const { location, title, children, description } = this.props;
         const rootPath = `${__PATH_PREFIX__}/`;
         let header;
 
+        // THIS IS FOR THE OVERALL SITE TITLE AND DESCRIPTION
+
         if (location.pathname === rootPath) {
             header = (
-                <Title home>
-                    <Link
-                        style={{
-                            boxShadow: `none`,
-                            textDecoration: `none`,
-                            color: `inherit`,
-                        }}
-                        to={`/`}
-                    >
-                        {title}
-                    </Link>
-                </Title>
+                <>
+                    <Title home>
+                        <Link to={`/`}>{title}</Link>
+                    </Title>
+                    <Description>{description}</Description>
+                </>
             );
         } else {
             header = (
-                <Title>
-                    <Link
-                        style={{
-                            boxShadow: `none`,
-                            textDecoration: `none`,
-                            color: `inherit`,
-                        }}
-                        to={`/`}
-                    >
-                        {title}
-                    </Link>
-                </Title>
+                <>
+                    <Title>
+                        <Link to={`/`}>{title}</Link>
+                    </Title>
+                </>
             );
         }
         return (
@@ -60,12 +50,13 @@ class Layout extends React.Component {
 export default Layout;
 
 const Wrapper = styled.div`
-    h6 {
-        font-weight: normal;
-        margin-top: -20px;
-    }
+    padding: 15px;
 `;
 
-const Title = styled.h2`
-    font-size: ${props => (props.home ? "50px" : "20px")};
+const Description = styled.p`
+    font-size: 22px;
+    position: relative;
+    top: -22px;
+    left: 10px;
+    max-width: 360px;
 `;

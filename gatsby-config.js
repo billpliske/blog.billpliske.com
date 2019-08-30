@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: `My Tall Tales`,
+        title: `Tall Tales`,
         author: `Bill Pliske`,
-        description: `A (truthful) blog on development, design and stuff by Bill Pliske.`,
+        description: `A (truthful) blog on development, design, and stuff.`,
         siteUrl: `https://blog.billpliske.com/`,
         social: {
             twitter: `billpliske`,

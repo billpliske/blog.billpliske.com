@@ -66,4 +66,8 @@ const StyledBio = styled.p`
     color: var(--amsterdam);
     font-style: italic;
     line-height: 21px;
+    margin-top: 0;
+    max-width: 230px;
+    font-size: 15px;
+    line-height: 19px;
 `;

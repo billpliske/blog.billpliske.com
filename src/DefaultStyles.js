@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-// import styled from "styled-components";
+import styled from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -24,35 +24,47 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     h1 {
         color: var(--phoenix);
         font-size: 55px;
+        line-height: 58px;
         font-weight: 900;
         letter-spacing: -1px;
         font-style: italic;
+        margin: 25px 0 5px 0;
     }
 
-    h2 {
-        color: var(--portland);
-        font-family: "Teko", sans-serif;
-        a {
-            font-family: "Teko", sans-serif;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-    }
+    
 
     h3 {
         color: var(--vancouver);
         font-family: "Teko", sans-serif;
         font-weight: 600;
         font-size: 25px;
+        margin: 30px 0 5px 0;
+    }
+
+    h6 {
+        margin-top: -13px;
+        font-size: 15px;
+        font-weight: 400;
     }
     
 
     ol, ul {
-        margin-left: 40px;
+        margin-left: 0px;
+        li {
+            margin-bottom: 6px;
+        }
+    }
+
+    img {
+        width: 100%;
     }
 
 
@@ -63,3 +75,25 @@ export const GlobalStyle = createGlobalStyle`
 /******** REUSABLE STYLES ************/
 /*************************************/
 /*************************************/
+
+export const Title = styled.h2`
+    color: var(--portland);
+    font-family: "Teko", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: ${props => (props.home ? "130px" : "30px")};
+    line-height: ${props => (props.home ? "97px" : "20px")};
+    max-width: 300px;
+    margin: 5px 0 0 0;
+    a {
+        text-decoration: none;
+        font-family: inherit;
+        display: block;
+        color: var(--portland);
+    }
+`;
+
+export const Image = styled.img`
+    width: 100%;
+`;
