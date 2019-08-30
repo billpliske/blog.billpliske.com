@@ -51,6 +51,8 @@ export default Layout;
 
 const Wrapper = styled.div`
     padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
 `;
 
 const Description = styled.p`
