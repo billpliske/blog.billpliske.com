@@ -28,7 +28,6 @@ class BlogIndex extends React.Component {
                     const title = node.frontmatter.title || node.fields.slug;
                     return (
                         <article key={node.fields.slug}>
-                            <header>
                                 <Headline>
                                     <Link
                                         style={{ boxShadow: `none` }}
@@ -39,7 +38,6 @@ class BlogIndex extends React.Component {
                                 </Headline>
 
                                 <small>{node.frontmatter.date}</small>
-                            </header>
                             <section>
                                 <p
                                     dangerouslySetInnerHTML={{
