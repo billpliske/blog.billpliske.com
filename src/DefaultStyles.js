@@ -45,8 +45,8 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--vancouver);
         font-family: "Teko", sans-serif;
         font-weight: 600;
-        font-size: 25px;
-        margin: 30px 0 5px 0;
+        font-size: 27px;
+        margin: 30px 0 -15px 0;
     }
 
     h6 {

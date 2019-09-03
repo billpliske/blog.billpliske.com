@@ -87,6 +87,7 @@ const Headline = styled.h3`
     font-weight: 800;
     font-size: 30px;
     margin: 50px 0 0px 0;
+    line-height: 33px;
     a {
         text-decoration: none;
     }
