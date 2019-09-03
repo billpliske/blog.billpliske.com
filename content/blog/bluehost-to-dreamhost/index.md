@@ -36,4 +36,4 @@ Of course, Dreamhost wants you to buy hosting from them. The more hosting accoun
 
 3. So what it you want a subdomain? Those are handled the same way as "www', by the way. This, time you **do** put something in the Name field. As you can see in my Custom DNS area, I had separate entries for *www*, *paintings*, and *blog*.
 
-4. Choose CNAME as the type, and then paste in your Netlify URL into the value field. ***Note***: Sometimes you need to put a '.' at the end of your Netlify URL. I've seen examples of it, but I've yet to notice the specific circumstances when you need it.
+4. Choose CNAME as the type, and then paste in <a href="/launchings-domains-on-netlify">your Netlify URL</a> into the value field. ***Note***: Sometimes you need to put a '.' at the end of your Netlify URL. I've seen examples of it, but I've yet to notice the specific circumstances when you need it.
