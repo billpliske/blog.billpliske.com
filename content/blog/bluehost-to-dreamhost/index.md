@@ -6,7 +6,7 @@ description: Buying your domains cheaply, use Dreamhost as a central HQ, and the
 
 I'm a sucker for a  nice-looking interface, and Dreamhost certainly looked better than Bluehost. So I made this my go-to hosting company back in 2006.
 
-Buying ".com" domains through Dreamhost are $8.99 each, which isn't bad ... but you can find them cheaper.Speaking of cheap, Netlify is free in many cases, and it's super easy to use.
+Buying ".com" domains through Dreamhost are $8.99 each, which isn't bad ... but you can find them cheaper. Speaking of cheap, Netlify is free in many cases, and it's super easy to use.
 
 So here's the process for moving my domains to Dreamhost, and then setting them up to run with Netlify:
 
