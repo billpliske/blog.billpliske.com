@@ -62,4 +62,4 @@ The key is to look for the "5E72C7" in that long ASCII URL. Simply replace those
 
 Here's the final result:
 
-![Dropdown with custom SVG arrow](https://res.cloudinary.com/billpliske/image/upload/v1567553710/blog/select-dropdown.png)
+![Dropdown with custom SVG arrow](https://res.cloudinary.com/billpliske/image/upload/v1567554217/blog/select-dropdown.png)
