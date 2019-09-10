@@ -31,6 +31,7 @@
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
     "typeface-raleway": "0.0.75",
+    "typeface-roboto-mono": "0.0.75",
     "typeface-teko": "0.0.72"
   },
   "devDependencies": {

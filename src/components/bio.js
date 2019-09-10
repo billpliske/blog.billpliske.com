@@ -33,7 +33,7 @@ const Bio = () => {
 
     const { author } = data.site.siteMetadata;
     return (
-        <div
+        <BioWrapper
             style={{
                 display: `flex`,
             }}
@@ -50,11 +50,18 @@ const Bio = () => {
                     You should follow him on Twitter
                 </a> */}
             </StyledBio>
-        </div>
+        </BioWrapper>
     );
 };
 
 export default Bio;
+
+const BioWrapper = styled.div`
+    border-top: 1px solid var(--vancouver);
+    margin-top: 50px;
+    padding-top: 10px;
+`;
+
 
 const StyledImage = styled(Image)`
     border-radius: 50%;
@@ -64,10 +71,11 @@ const StyledImage = styled(Image)`
 
 const StyledBio = styled.p`
     color: var(--amsterdam);
+    font-size: 15px;
     font-style: italic;
+    line-height: 19px;
     line-height: 21px;
     margin-top: 0;
-    max-width: 230px;
-    font-size: 15px;
-    line-height: 19px;
+    max-width: 390px;
+    padding-top: 6px;
 `;

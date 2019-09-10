@@ -45,8 +45,8 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--vancouver);
         font-family: "Teko", sans-serif;
         font-weight: 600;
-        font-size: 27px;
-        margin: 30px 0 -15px 0;
+        font-size: 29px;
+        margin: 60px 0 -15px 0;
     }
 
     h6 {
@@ -65,6 +65,11 @@ export const GlobalStyle = createGlobalStyle`
 
     img {
         width: 100%;
+    }
+
+   .gatsby-highlight span, code {
+        font-family: 'Roboto Mono', monospace !important;
+        font-weight: 600;
     }
 
 
