@@ -18,9 +18,10 @@ This tutorial assumes you already have a repo ready to go locally. In my case, t
 8. Back in Dokku CLI in terminal, add the new subdomain: `dokku domains:add appname api.domainname.com`  (I usually make my appname the same as my domainname)
 9. Back to your repo tab, and do your normal git commands, adding and committing. Ending with a `git push dokku master`
 10. That'll bring up a lot of messaging as it goes through the process of creating/updating your Dokku app.
----
+
+
 **Quick note:** *Ensure the safety of your droplet, by removing root login and creating a new user who can login via SSH. Tutorial: https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04*
----
+
 
 ### Setting ENV variables
 - `dokku config:set appname DATABASE_URL=’mongodb://username:password.mlab.com..etc'`  (you need the quotes!)
