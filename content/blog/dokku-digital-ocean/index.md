@@ -24,12 +24,12 @@ This tutorial assumes you already have a repo ready to go locally. In my case, t
 
 
 ### Setting ENV variables
-- dokku config:set appname DATABASE_URL=’mongodb://username:password.mlab.com..etc'  (you need the quotes!)
+- `dokku config:set appname DATABASE_URL=’mongodb://username:password.mlab.com..etc'`  (you need the quotes!)
 
 ### What’s up? Things aren’t working
-`dokku logs appname` (this is **SUPER** helpful)
-`dokku logs appname -t`  (continually streams logs)
-`dokku logs:failed appname`  (failed deploy logs for any app)
+- `dokku logs appname` (this is **SUPER** helpful)
+- `dokku logs appname -t`  (continually streams logs)
+- `dokku logs:failed appname`  (failed deploy logs for any app)
 
 ### Good commands to know
 - `dokku apps:list` (lists all apps)
