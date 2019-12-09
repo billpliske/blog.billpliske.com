@@ -17,7 +17,7 @@ This tutorial assumes you already have a repo ready to go locally. In my case, t
 7. In Dreamhost (or whatever you have), Add a new A record for that domain, naming it  api.domainname.com, with a path of your Digital Ocean IP address. That'll take up to a couple of hours to propagate.
 8. Back in Dokku CLI in terminal, add the new subdomain: `dokku domains:add appname api.domainname.com`  (I usually make my appname the same as my domainname)
 9. Back to your repo tab, and do your normal git commands, adding and committing. Ending with a `git push dokku master`
-10. That'll bring up a lot of messaging as it goes through the process of creating/updating your Dokku app.
+10. That'll bring up a lot of terminal logging as it goes through the process of creating/updating your Dokku app.
 
 
 **Quick note:** *Ensure the safety of your droplet, by removing root login and creating a new user who can login via SSH. Tutorial: https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04*
