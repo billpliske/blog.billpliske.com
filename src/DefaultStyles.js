@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
     :root {
-        --london: #383b61;
+        --london: #313354;
         --sanfrancisco: #cccfe6;
         --phoenix: #cfa872;
         --vancouver: #838de6;
