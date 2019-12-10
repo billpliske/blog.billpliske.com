@@ -7,13 +7,13 @@ description: Setting things up from scratch, and making use of subdomains for ti
 This tutorial assumes you already have a repo ready to go locally. In my case, that's like a Node app. I decided that while I like Netlify for my front-end apps, I wanted something less expensive than Heroku for my back-end apps. Typically, I'm running things like Graphql endpoints — APIs for my client to hit.
 
 ### Basic steps
-1. Create droplet on DO, choosing dokku from the Marketplace. I'd recommend the $5 a month setting. 
+1. Create droplet on DO, choosing dokku from the Marketplace. I'd recommend the $5 a month setting.
 2. Before creating Droplet, give your Dokku name something shorter/better than the long one they give you by default.
-3. After hitting OK/Create ... wait a bit, then go to the main Digital Ocean IP/URL. After hitting OK, it takes you to docs page. 
+3. After hitting OK/Create ... wait a bit, then go to the main Digital Ocean IP/URL. After hitting OK, it takes you to docs page.
 4. Now you need to SSH in with root. `ssh root@your_server_ip`
 6. After SSH'ing in, create your first app in Dokku (replace appname with yours) `dokku apps:create appname`
 5. Create a new terminal tab, and CD to your local Node app location and create a git remote: `git remote add dokku dokku@<droplet-ip>:appname`
-6. I'd like all of my backends to have names like api.domain1.com, and api.domain2.com. I have some of my domains on Dreamhost, so let's create subdomains for each backend server. 
+6. I'd like all of my backends to have names like api.domain1.com, and api.domain2.com. I have some of my domains on Dreamhost, so let's create subdomains for each backend server.
 7. In Dreamhost (or whatever you have), Add a new A record for that domain, naming it  api.domainname.com, with a path of your Digital Ocean IP address. That'll take up to a couple of hours to propagate.
 8. Back in Dokku CLI in terminal, add the new subdomain: `dokku domains:add appname api.domainname.com`  (I usually make my appname the same as my domainname)
 9. Back to your repo tab, and do your normal git commands, adding and committing. Ending with a `git push dokku master`

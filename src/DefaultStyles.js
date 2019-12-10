@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
     :root {
-        --london: #2c2d3b;
+        --london: #383b61;
         --sanfrancisco: #cccfe6;
         --phoenix: #cfa872;
         --vancouver: #838de6;
@@ -18,15 +18,15 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        color: var(--vancouver);  
+        color: var(--vancouver);
         &:hover {
             text-decoration: none;
         }
     }
 
     p {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 17px;
+        line-height: 25px;
     }
 
     h1 {
@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 25px 0 5px 0;
     }
 
-    
+
 
     h3 {
         color: var(--vancouver);
@@ -54,12 +54,12 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 15px;
         font-weight: 400;
     }
-    
+
 
     ol, ul {
         margin-left: 0px;
         li {
-            margin-bottom: 6px;
+            margin-bottom: 20px;
         }
     }
 
