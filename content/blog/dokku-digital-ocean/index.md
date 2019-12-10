@@ -1,5 +1,5 @@
 ---
-title: Simple Dokku workflow with Digital Oean
+title: Simple Dokku workflow with Digital Ocean
 date: "2019-12-09T18:19"
 description: Setting things up from scratch, and making use of subdomains for tidier future apps
 ---
