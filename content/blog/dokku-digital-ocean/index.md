@@ -23,8 +23,14 @@ This tutorial assumes you already have a repo ready to go locally. In my case, t
 **Quick note:** *Ensure the safety of your droplet, by removing root login and creating a new user who can login via SSH. Tutorial: https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04*
 
 
-### Setting ENV variables
-- `dokku config:set appname DATABASE_URL=’mongodb://username:password.mlab.com..etc'`  (you need the quotes!)
+### Setting ENV variables?
+- `dokku config:set appname DATABASE_URL='mongodb://username:password.mlab.com..etc'`  (you need the quotes!)
+
+### Setting PORT in Node app?
+- You need the environmental port variable. Like this
+```app.listen(process.env.PORT || 4000,  () => {
+    console.log('now listening for requests on port 4000');
+});```
 
 ### What’s up? Things aren’t working
 - `dokku logs appname` (this is **SUPER** helpful)
