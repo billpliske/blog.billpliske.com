@@ -30,7 +30,8 @@ This tutorial assumes you already have a repo ready to go locally. In my case, t
 - You need the environmental port variable. Like this
 ```app.listen(process.env.PORT || 4000,  () => {
     console.log('now listening for requests on port 4000');
-});```
+});
+```
 
 ### What’s up? Things aren’t working
 - `dokku logs appname` (this is **SUPER** helpful)
