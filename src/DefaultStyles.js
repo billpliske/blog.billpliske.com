@@ -72,6 +72,12 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 600;
     }
 
+    verticalimage-left {
+        img {
+            width: 400px;
+        }
+    }
+
 
 `;
 
