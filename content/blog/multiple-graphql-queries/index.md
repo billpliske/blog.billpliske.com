@@ -10,7 +10,7 @@ The solution is simple. Keep using the Apollo Hooks useQuery method, and simply 
 
 ### The solution
 
-```
+```javascript
 
  // THE QUERIES
   const {

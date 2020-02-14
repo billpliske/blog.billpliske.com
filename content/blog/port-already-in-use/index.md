@@ -12,7 +12,7 @@ Here's the error developers often get. I found the solution via this [StackOverf
 ### Then, the fix
 1. `lsof -i tcp:4000`  (replace 4000 with whatever port you were using)
 2. When I did that, I got back the following:
-```
+```javascript
 COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
 node    2457 bill   23u  IPv6  20672      0t0  TCP *:4000 (LISTEN)
 ```

@@ -28,7 +28,7 @@ This tutorial assumes you already have a repo ready to go locally. In my case, t
 
 ### Setting PORT in Node app?
 - You need the environmental port variable. Like this
-```
+```javascript
 app.listen(process.env.PORT || 4000,  () => {
     console.log('now listening for requests on port 4000');
 });
