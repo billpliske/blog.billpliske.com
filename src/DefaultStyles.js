@@ -72,6 +72,20 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 600;
     }
 
+    pre code {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    p code, li code {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    code span {
+        background-color: transparent !important;
+    }
+
     verticalimage-left {
         img {
             width: 400px;
