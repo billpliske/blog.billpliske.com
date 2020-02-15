@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import { DiscussionEmbed } from "disqus-react"
+import { DiscussionEmbed } from "disqus-react";
+import styled from 'styled-components';
 
 import Bio from "../components/bio";
 import Layout from "../components/layout";
@@ -46,20 +47,20 @@ class BlogPostTemplate extends React.Component {
                             padding: 0,
                         }}
                     >
-                        <li>
+                        <NextPrevious>
                             {previous && (
                                 <Link to={previous.fields.slug} rel="prev">
                                     ← {previous.frontmatter.title}
                                 </Link>
                             )}
-                        </li>
-                        <li>
+                        </NextPrevious>
+                        <NextPrevious>
                             {next && (
                                 <Link to={next.fields.slug} rel="next">
                                     {next.frontmatter.title} →
                                 </Link>
                             )}
-                        </li>
+                        </NextPrevious>
                     </ul>
                 </nav>
                 <DiscussionEmbed {...disqusConfig} />
@@ -88,5 +89,16 @@ export const pageQuery = graphql`
                 description
             }
         }
+    }
+`;
+
+const NextPrevious = styled.li`
+    width: 40%;
+    background-color: #838de6;
+    padding: 10px;
+    border-radius: 8px;
+    a {
+        color: white;
+        background-color: transparent;
     }
 `;
