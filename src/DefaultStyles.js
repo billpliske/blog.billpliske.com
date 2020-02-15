@@ -92,6 +92,12 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    nav ~ div {
+        padding: 30px;
+        border-top: 2px var(--vancouver) dotted;
+        margin-top: 30px;
+    }
+
 
 `;
 
