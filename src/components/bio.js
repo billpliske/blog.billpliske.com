@@ -44,7 +44,7 @@ const Bio = () => {
             />
             <StyledBio>
                 Written by <strong>{author}</strong>, who lives and works in
-                Arizona desert trying his best to stay cool.
+                the Arizona desert trying his best to stay cool.
                 {` `}
                 {/* <a href={`https://twitter.com/${social.twitter}`}>
                     You should follow him on Twitter
@@ -57,7 +57,6 @@ const Bio = () => {
 export default Bio;
 
 const BioWrapper = styled.div`
-    border-top: 1px solid var(--vancouver);
     margin-top: 50px;
     padding-top: 10px;
 `;
