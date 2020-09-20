@@ -41,4 +41,5 @@ Assuming your submission went through ok (you'll get a success message, if so), 
 ![Netlify form submission](https://res.cloudinary.com/billpliske/image/upload/v1600627090/blog/netlify-form-submission.png)
 
 Click on the Form Notification, and add an email address.  Done!
+
 ![Netlify form menu](https://res.cloudinary.com/billpliske/image/upload/v1600627189/blog/form-notification-menu.png)
