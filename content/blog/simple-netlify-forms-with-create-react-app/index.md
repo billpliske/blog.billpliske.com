@@ -11,7 +11,7 @@ In this example, I'm creating a **meal plan** form.
 
 ### High-level view
 The steps are pretty straightforward:
-1. Create a simple html form file, and save it in your `public` folder.
+1. Create a simple html form file, and save it in your `public` folder. Using Vite? Just create a *public*, and throw in a copy of the html file.
 2. Create your React form file, making sure to follow some similar naming conventions as the first file.
 
 ### Naming conventions
@@ -23,6 +23,8 @@ Since this was a meal plan form, I decided to make **mealplan** my key word. So 
 Notice that within the **form** tag, I used **`name="mealplan"`**. I'll also use this name in the actual React form.
 
 ![Public main form file](https://res.cloudinary.com/billpliske/image/upload/v1600626197/blog/forms-public-main.png)
+
+Want to direct users to a specific page after the submission? Use the *action* attribute on the form tag to do that.
 
 
 
