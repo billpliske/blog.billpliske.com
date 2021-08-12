@@ -10,7 +10,7 @@ The one I'm using now is called <a href="[/launchings-domains-on-netlify](https:
 ### Three steps
 
 1. Open a terminal tab, and run your project on localhost. Let's say you're going with **localhost:5000**.
-2. In a separate terminal tab, run this command:
+2. In a separate terminal tab, run this command:<br>
 **`ssh -R 80:localhost:5000 localhost.run`**
 3. Done hosting for the moment? Remember to kill that ssh process with a **`Ctrl + c`**.
 
