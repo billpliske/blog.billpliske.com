@@ -58,6 +58,9 @@ typings/
 .cache/
 public
 
+# vite build output
+dist/
+
 # Mac files
 .DS_Store
 

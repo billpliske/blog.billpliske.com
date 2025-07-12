@@ -14,17 +14,18 @@
   },
   "dependencies": {
     "aws-amplify": "^6.4.0",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
     "markdown-it": "^14.0.0",
-    "prismjs": "^1.29.0"
+    "prismjs": "^1.29.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.0.4",
     "@aws-amplify/backend-cli": "^1.1.1",
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.12.5",
     "@types/markdown-it": "^13.0.7",
+    "@types/node": "^20.12.5",
+    "@types/prismjs": "^1.26.5",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/tsconfig": "^0.5.1",
     "aws-cdk": "^2.137.0",

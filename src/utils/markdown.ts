@@ -18,11 +18,11 @@ export interface BlogPost {
   html: string
 }
 
-const md = new MarkdownIt({
+const md: MarkdownIt = new MarkdownIt({
   html: true,
   linkify: true,
   typographer: true,
-  highlight: function (str, lang) {
+  highlight: function (str: string, lang: string): string {
     if (lang && Prism.languages[lang]) {
       try {
         return '<pre class="language-' + lang + '"><code class="language-' + lang + '">' +

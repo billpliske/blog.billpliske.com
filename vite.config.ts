@@ -14,7 +14,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {
-          const info = assetInfo.name.split('.')
+          if (!assetInfo.names || !assetInfo.names[0]) return 'assets/[name]-[hash][extname]'
+          const info = assetInfo.names[0].split('.')
           const extType = info[info.length - 1]
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
             return `assets/images/[name]-[hash][extname]`
