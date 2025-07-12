@@ -4,7 +4,7 @@ backend:
     build:
       commands:
         - npm ci
-        - npx amplify backend deploy --stack-name $AWS_BRANCH --stack-name-resolver AmplifyStackNameResolver
+        - npx ampx backend deploy --stack-name $AWS_BRANCH --stack-name-resolver AmplifyStackNameResolver
 frontend:
   phases:
     preBuild:
